@@ -9,9 +9,7 @@ session = HTMLSession()
 def get_tweets(query, pages=25):
     """Gets tweets for a given user, via the Twitter frontend API."""
 
-    after_part = (
-        f"include_available_features=1&include_entities=1&include_new_items_bar=true"
-    )
+    after_part = "include_available_features=1&include_entities=1&include_new_items_bar=true"
     if query.startswith("#"):
         query = quote(query)
         url = f"https://twitter.com/i/search/timeline?f=tweets&vertical=default&q={query}&src=tyah&reset_error_state=false&"
