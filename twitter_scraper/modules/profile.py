@@ -148,7 +148,7 @@ class Profile:
             "biography",
             "website",
             "profile_photo",
-            'banner_photo'
+            'banner_photo',
             "likes_count",
             "tweets_count",
             "followers_count",
